@@ -1,6 +1,23 @@
 body {
-    background-image: url('among-us.gif');
-  }
-  h1 {
-    color: red;
-  }
+  background-color: rgb(74, 227, 254); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(74, 227, 254), rgb(2, 119, 139));
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+.white-header {
+  background-color: white;
+  color: black;
+  height: 70px;
+}
+.name {
+  padding-left: 10px;
+  padding-right: 200px;
+  padding-top: 20px;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
