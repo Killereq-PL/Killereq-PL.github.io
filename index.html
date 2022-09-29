@@ -10,11 +10,20 @@
               background-repeat: no-repeat;
               background-attachment: fixed;
             }
-            h1 {
+            .mainText {
                 color: rgb(255, 255, 255);
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-size: 500%;
-                padding-top: 10%;
+                text-align: center;
+                border: 3px;
+                line-height: 1.5;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .mainTextContainer {
+                line-height: 5000%;
+                height: 5000%;
+                border: 3px;
                 text-align: center;
             }
             .white-header {
@@ -70,6 +79,8 @@
         </div>
     </head>
     <body>
-        <h1>I do programming.</h1>
+        <div class="mainTextContainer">
+            <div class="mainText">I do programming.</div>
+        </div>
     </body>
 </html>
