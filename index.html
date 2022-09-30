@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
         <style>
             body {
               background-color: rgb(74, 227, 254); /* For browsers that do not support gradients */
@@ -25,6 +28,28 @@
                 height: 5000%;
                 border: 3px;
                 text-align: center;
+            }
+            .mainButtonContainer {
+              display: contents;
+              padding: 10px;
+              width: 200px;
+              border: 1px;
+            }
+            .mainButtonContainer a{
+              background-color: rgba(255, 255, 255, 0.791);
+              background-image: linear-gradient(rgba(255, 255, 255, 0.634), rgba(255, 255, 255, 0.873));
+              border-style: solid;
+              border-radius: 9px;
+              border-color: #000000;
+              color: black;
+              padding: 25px 75px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 32px;
+              font-family: 'Work Sans', sans-serif;
+              margin: 4px 2px;
+              cursor: pointer;
+              transition-duration: 400ms;
             }
             .white-header {
               background-color: white;
@@ -81,6 +106,9 @@
     <body>
         <div class="mainTextContainer">
             <div class="mainText">I do programming.</div>
+        </div>
+        <div class="mainButtonContainer">
+          <a href="about.html">About</a>
         </div>
     </body>
 </html>
