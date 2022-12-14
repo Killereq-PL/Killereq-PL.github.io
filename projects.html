@@ -67,8 +67,8 @@
               color: white;
             }
             .projectFrame {
-              font-size: 150%;
-              margin: auto;
+              font-size: 250%;
+              margin: 0 auto;
               width: 60%;
               border: 2px;
               border-style: inset;
@@ -79,8 +79,10 @@
               display:flex;
               justify-content:space-between;
               height: 500px;
+
             }
             .projectFrame a:link, .projectFrame a:visited, .projectFrame a:active {
+              font-size: 100%;
               background-color: #bdbdbd;
               color: black;
               padding: 15px 25px;
@@ -88,8 +90,10 @@
               text-align: center;
               text-decoration: none;
               display: inline-block;
+              line-height: 50px;
             }
             .projectFrame a:hover {
+              font-size: 100%;
               background-color: whitesmoke;
               color: black;
               padding: 15px 25px;
@@ -98,9 +102,8 @@
               text-decoration: none;
               display: inline-block;
             }
-            .projectFrame iframe::before{
-              content: "\a";
-              white-space: pre;
+            .projectFrame iframe {
+              display: table;
             }
         </style>
 
@@ -122,7 +125,7 @@
     <body>
       <div class="projectFrame">
         <a href="https://github.com/Killereq-PL/Konkurs-CMI">Link</a> Konkurs-CMI
-        <iframe src="https://killereq-pl.github.io/Konkurs-CMI/" height="200" width="300" title="Github:"></iframe>
+        <iframe src="https://killereq-pl.github.io/Konkurs-CMI/" height="400" width="300" title="Github:"></iframe>
       </div>
     </body>
 </html>
