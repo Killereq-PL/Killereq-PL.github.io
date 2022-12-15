@@ -67,7 +67,6 @@
               color: white;
             }
             .projectFrame {
-              font-size: 250%;
               margin: 0 auto;
               width: 60%;
               border: 2px;
@@ -76,12 +75,22 @@
               font-family: 'Work Sans', sans-serif;
               color: white;
               background-color: gray;
-              display:flex;
-              justify-content:space-between;
               height: 500px;
 
             }
-            .projectFrame a:link, .projectFrame a:visited, .projectFrame a:active {
+            .projectFrameHeader {
+              font-size: 250%;
+              width: 60%;
+              text-align: center;
+              font-family: 'Work Sans', sans-serif;
+              color: white;
+              background-color: gray;
+              display:flex;
+              justify-content:space-between;
+              height: 25%;
+
+            }
+            .projectFrameHeader a:link, .projectFrameHeader a:visited, .projectFrameHeader a:active {
               font-size: 100%;
               background-color: #bdbdbd;
               color: black;
@@ -92,7 +101,7 @@
               display: inline-block;
               line-height: 50px;
             }
-            .projectFrame a:hover {
+            .projectFrameHeader a:hover {
               font-size: 100%;
               background-color: whitesmoke;
               color: black;
@@ -102,9 +111,17 @@
               text-decoration: none;
               display: inline-block;
             }
-            .projectFrame iframe {
-              display: table;
+            .projectFrameIFRAME iframe {
+              height: 100%;
+              width: 100%;
+              border: none;
             }
+            .projectFrameIFRAME {
+              height: 75%;
+              width: 100%;
+              border: none;
+            }
+
         </style>
 
         <div class="white-header">
@@ -124,8 +141,13 @@
     </head>
     <body>
       <div class="projectFrame">
-        <a href="https://github.com/Killereq-PL/Konkurs-CMI">Link</a> Konkurs-CMI
-        <iframe src="https://killereq-pl.github.io/Konkurs-CMI/" height="400" width="300" title="Github:"></iframe>
+        <div class="projectFrameHeader">
+          <a href="https://github.com/Killereq-PL/Konkurs-CMI">Link</a>
+          Konkurs-CMI
+        </div>
+        <div class="projectFrameIFRAME">
+          <iframe src="https://killereq-pl.github.io/Konkurs-CMI/" height="400" width="300" title="Github:"></iframe>
+        </div>
       </div>
     </body>
 </html>
