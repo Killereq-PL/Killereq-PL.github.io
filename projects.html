@@ -24,6 +24,8 @@
               background-color: white;
               color: black;
               height: 70px;
+              position: fixed;
+              width: 100%;
             }
             .name {
               padding-left: 10px;
@@ -58,12 +60,14 @@
               color: black;
             }
             .PageName {
+              padding-top: 50px;
               line-height: 250%;
               height: 250%;
               border: 3px;
               text-align: center;
               font-size: 500%;
               font-family: 'Work Sans', sans-serif;
+              width: 100%;
               color: white;
             }
             .projectFrame {
@@ -71,7 +75,8 @@
               margin-bottom: 40px;
               width: 60%;
               border: 2px;
-              border-style: inset;
+              border-style: solid;
+              border-radius: 10px;
               text-align: center;
               font-family: 'Work Sans', sans-serif;
               color: white;
@@ -82,8 +87,9 @@
               font-size: 250%;
               width: 99%;
               text-align: left;
+              border-radius: 10px;
               font-family: 'Work Sans', sans-serif;
-              color: white;
+              color: white; 
               background-color: gray;
               display:flex;
               justify-content:space-between;
@@ -95,11 +101,13 @@
               background-color: #bdbdbd;
               color: black;
               padding: 15px 25px;
+              border-radius: 10px;
               height: 50px;
               text-align: center;
               text-decoration: none;
               display: inline-block;
               line-height: 50px;
+              transition-duration: 500ms;
             }
             .projectFrameHeader a:hover {
               font-size: 100%;
@@ -107,19 +115,28 @@
               color: black;
               padding: 15px 25px;
               height: 50px;
+              border-radius: 10px;
               text-align: center;
               text-decoration: none;
               display: inline-block;
             }
             .projectFrameIFRAME iframe {
-              height: 100%;
+              padding-top: 10px;
+              height: 300px;
               width: 100%;
+              border-radius: 10px;
               border: none;
             }
             .projectFrameIFRAME {
+              padding-bottom: 0px;
               height: 75%;
               width: 100%;
+              border-radius: 10px;
               border: none;
+              position: relative;
+            }
+            .projectFrame {
+              height:max-content;
             }
 
         </style>
@@ -145,9 +162,7 @@
           <a href="https://github.com/Killereq-PL/Konkurs-CMI">Link</a>
           Konkurs-CMI
         </div>
-        <div class="projectFrameIFRAME">
-          <iframe src="https://github.com/Killereq-PL/Konkurs-CMI" height="400" width="300" title="Github:"></iframe>
-        </div>
+        
       </div>
       <div class="projectFrame">
         <div class="projectFrameHeader">
