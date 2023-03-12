@@ -22,6 +22,11 @@
                 line-height: 1.5;
                 display: inline-block;
                 vertical-align: middle;
+                animation: fadeIn ease 1s;
+                -webkit-animation: fadeIn ease 1s;
+                -moz-animation: fadeIn ease 1s;
+                -o-animation: fadeIn ease 1s;
+                -ms-animation: fadeIn ease 1s;
             }
             .mainTextContainer {
                 line-height: 5000%;
@@ -49,6 +54,16 @@
               font-family: 'Work Sans', sans-serif;
               margin: 4px 2px;
               cursor: pointer;
+              transition-duration: 400ms;
+              animation: fadeIn ease 1s;
+              -webkit-animation: fadeIn ease 1s;
+              -moz-animation: fadeIn ease 1s;
+              -o-animation: fadeIn ease 1s;
+              -ms-animation: fadeIn ease 1s;
+            }
+            .mainButtonContainer a:hover{
+              background-color: rgba(206, 206, 206, 0.791);
+              background-image: linear-gradient(rgba(206, 206, 206, 0.634), rgba(206, 206, 206, 0.873));
               transition-duration: 400ms;
             }
             ul {
@@ -85,6 +100,50 @@
 
             .name {
               border-left: none;
+            }
+            @keyframes fadeIn {
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
+            
+            @-moz-keyframes fadeIn {
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
+            
+            @-webkit-keyframes fadeIn {
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
+            
+            @-o-keyframes fadeIn {
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
+            }
+            
+            @-ms-keyframes fadeIn {
+              0% {
+                opacity:0;
+              }
+              100% {
+                opacity:1;
+              }
             }
         </style>
     </head>
