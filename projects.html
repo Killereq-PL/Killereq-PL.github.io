@@ -20,45 +20,6 @@
                 padding-top: 10%;
                 text-align: center;
             }
-            .white-header {
-              background-color: white;
-              color: black;
-              height: 70px;
-              position: fixed;
-              width: 100%;
-            }
-            .name {
-              padding-left: 10px;
-              padding-top: 20px;
-              font-size: x-large;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            .header-container > * {
-              display: inline-block;
-            }
-            .header-button-container {
-                padding-top: 5px;
-                float:right
-            }
-            .headerbtn {
-              background-color: white;
-              border-style: solid;
-              border-color: #000000;
-              color: black;
-              padding: 15px 32px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin: 4px 2px;
-              cursor: pointer;
-              transition-duration: 400ms;
-            }
-            .headerbtn:hover {
-              background-color: whitesmoke;
-              color: black;
-            }
             .PageName {
               padding-top: 50px;
               line-height: 250%;
@@ -73,6 +34,7 @@
             .projectFrame {
               margin: 0 auto;
               margin-bottom: 40px;
+              margin-top: 50px;
               width: 60%;
               border: 2px;
               border-style: solid;
@@ -136,27 +98,60 @@
               position: relative;
             }
             .projectFrame {
-              height:max-content;
+              height:auto;
+              padding-left: 3px;
+              padding-bottom: 3px;
+              padding-top: 3px;
             }
 
+            ul {
+              position:fixed;
+              width: 100%;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: rgb(255, 255, 255);
+              background-image: linear-gradient(rgba(255, 255, 255, 0.634), rgba(255, 255, 255, 0.873));
+            }
+
+            li {
+              float: left;
+              border-left: 1px solid rgb(110, 110, 110);
+            }
+            li a {
+              display: block;
+              color: rgb(15, 15, 15);
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-family: 'Work Sans Bold', sans-serif;
+            }
+            
+            li a:hover:not(.active):not(.name) {
+              background-color: #b7b5b5;
+            }
+            
+            .active {
+              background-color: #cdcdcd;
+            }
+
+            .name {
+              border-left: none;
+            }
         </style>
-
-        <div class="white-header">
-            <div class="header-container">
-                <div class="name"> Killereq_PL </div>
-
-            <div class="header-button-container">
-                <a class="headerbtn" href="index.html">Home</a>
-                <a class="headerbtn" href="about.html">About</a>
-                <a class="headerbtn" href="projects.html">Projects</a>
-                <a class="headerbtn" href="games.html">Games</a>
-            </div>
-            </div>
-        </div>
-
-        <div class="PageName">Projects</div>
     </head>
     <body>
+
+      <ul>
+        <li><a class="name">Killereq_PL</a></li>
+        <li style="float:right"><a class="active" href="projects.html">Projects</a></li>
+        <li style="float:right"><a href="games.html">Games</a></li>
+        <li style="float:right"><a href="index.html">Home</a></li>
+      </ul>
+
+      <div class="PageName">Projects</div>
+
       <div class="projectFrame">
         <div class="projectFrameHeader">
           <a href="https://github.com/Killereq-PL/Konkurs-CMI">Link</a>
@@ -169,9 +164,9 @@
           <a href="https://github.com/Killereq-PL/Guess-the-number">Link</a>
           Guess-the-number
         </div>
-        <div class="projectFrameIFRAME">
+        <!-- <div class="projectFrameIFRAME">
           <iframe src="https://github.com/Killereq-PL/Guess-the-number" height="400" width="300" title="Github:"></iframe>
-        </div>
+        </div> -->
       </div>
     </body>
 </html>

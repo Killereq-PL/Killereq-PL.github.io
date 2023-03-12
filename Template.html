@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
         <style>
             body {
               background-color: rgb(74, 227, 254); /* For browsers that do not support gradients */
@@ -10,77 +13,49 @@
               background-repeat: no-repeat;
               background-attachment: fixed;
             }
-            .mainText {
-                color: rgb(255, 255, 255);
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                font-size: 500%;
-                text-align: center;
-                border: 3px;
-                line-height: 1.5;
-                display: inline-block;
-                vertical-align: middle;
+            ul {
+              position:fixed;
+              width: 100%;
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: rgb(255, 255, 255);
+              background-image: linear-gradient(rgba(255, 255, 255, 0.634), rgba(255, 255, 255, 0.873));
             }
-            .mainTextContainer {
-                line-height: 5000%;
-                height: 5000%;
-                border: 3px;
-                text-align: center;
+
+            li {
+              float: left;
+              border-left: 1px solid rgb(110, 110, 110);
             }
-            .white-header {
-              background-color: white;
-              color: black;
-              height: 70px;
-            }
-            .name {
-              padding-left: 10px;
-              padding-top: 20px;
-              font-size: x-large;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            .header-container > * {
-              display: inline-block;
-            }
-            .header-button-container {
-                padding-top: 5px;
-                float:right
-            }
-            .headerbtn {
-              background-color: white;
-              border-style: solid;
-              border-color: #000000;
-              color: black;
-              padding: 15px 32px;
+            li a {
+              display: block;
+              color: rgb(15, 15, 15);
               text-align: center;
+              padding: 14px 16px;
               text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin: 4px 2px;
-              cursor: pointer;
-              transition-duration: 400ms;
+              font-family: 'Work Sans Bold', sans-serif;
             }
-            .headerbtn:hover {
-              background-color: whitesmoke;
-              color: black;
+            
+            li a:hover:not(.active):not(.name) {
+              background-color: #b7b5b5;
+            }
+            
+            .active {
+              background-color: #cdcdcd;
+            }
+
+            .name {
+              border-left: none;
             }
         </style>
-
-        <div class="white-header">
-            <div class="header-container">
-                <div class="name"> Killereq_PL </div>
-
-            <div class="header-button-container">
-                <a class="headerbtn" href="index.html">Home</a>
-                <a class="headerbtn" href="about.html">About</a>
-                <a class="headerbtn" href="projects.html">Projects</a>
-                <a class="headerbtn" href="games.html">Games</a>
-            </div>
-            </div>
-        </div>
     </head>
     <body>
-        <div class="mainTextContainer">
-            <div class="mainText">Template</div>
-        </div>
+      <ul>
+        <li><a class="name">Killereq_PL</a></li>
+        <li style="float:right"><a href="projects.html">Projects</a></li>
+        <li style="float:right"><a href="games.html">Games</a></li>
+        <li style="float:right"><a class="active" href="index.html">Home</a></li>
+      </ul>
     </body>
 </html>

@@ -52,15 +52,19 @@
               transition-duration: 400ms;
             }
             ul {
+              position:fixed;
+              width: 100%;
               list-style-type: none;
               margin: 0;
               padding: 0;
               overflow: hidden;
               background-color: rgb(255, 255, 255);
+              background-image: linear-gradient(rgba(255, 255, 255, 0.634), rgba(255, 255, 255, 0.873));
             }
 
             li {
               float: left;
+              border-left: 1px solid rgb(110, 110, 110);
             }
             li a {
               display: block;
@@ -68,21 +72,25 @@
               text-align: center;
               padding: 14px 16px;
               text-decoration: none;
-
+              font-family: 'Work Sans Bold', sans-serif;
             }
             
-            li a:hover:not(.active) {
-              background-color: #111;
+            li a:hover:not(.active):not(.name) {
+              background-color: #b7b5b5;
             }
             
             .active {
-              background-color: #04AA6D;
+              background-color: #cdcdcd;
+            }
+
+            .name {
+              border-left: none;
             }
         </style>
     </head>
     <body>
       <ul>
-        <li><a>Killereq_PL</a></li>
+        <li><a class="name">Killereq_PL</a></li>
         <li style="float:right"><a href="projects.html">Projects</a></li>
         <li style="float:right"><a href="games.html">Games</a></li>
         <li style="float:right"><a class="active" href="index.html">Home</a></li>
@@ -93,9 +101,6 @@
 
       <div class="mainButtonContainer">
         <a href="games.html">Games</a>
-      </div>
-
-      <div class="mainButtonContainer">
         <a href="projects.html">Projects</a>
       </div>
     </body>
