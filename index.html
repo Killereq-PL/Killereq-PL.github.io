@@ -32,7 +32,7 @@
             .mainButtonContainer {
               padding: 60px 0;
               text-align: center;
-              bottom: 200px;
+              bottom: 250px;
               position:relative;
             }
             .mainButtonContainer a{
@@ -51,67 +51,52 @@
               cursor: pointer;
               transition-duration: 400ms;
             }
-            .white-header {
-              background-color: white;
-              color: black;
-              height: 70px;
-              width: 100%;
-              position: fixed;
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: rgb(255, 255, 255);
             }
-            .name {
-              padding-left: 10px;
-              padding-top: 20px;
-              font-size: x-large;
-              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            li {
+              float: left;
             }
-            .header-container > * {
-              display: inline-block;
-            }
-            .header-button-container {
-                padding-top: 5px;
-                float:right
-            }
-            .headerbtn {
-              background-color: white;
-              border-style: solid;
-              border-color: #000000;
-              color: black;
-              padding: 15px 32px;
+            li a {
+              display: block;
+              color: rgb(15, 15, 15);
               text-align: center;
+              padding: 14px 16px;
               text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              font-family: Arial, Helvetica, sans-serif;
-              margin: 4px 2px;
-              cursor: pointer;
-              transition-duration: 400ms;
+
             }
-            .headerbtn:hover {
-              background-color: whitesmoke;
-              color: black;
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #04AA6D;
             }
         </style>
-
-        <div class="white-header">
-            <div class="header-container">
-                <div class="name"> Killereq_PL </div>
-
-            <div class="header-button-container">
-                <a class="headerbtn" href="index.html">Home</a>
-                <a class="headerbtn" href="about.html">About</a>
-                <a class="headerbtn" href="projects.html">Projects</a>
-                <a class="headerbtn" href="games.html">Games</a>
-            </div>
-            </div>
-        </div>
     </head>
     <body>
-        <div class="mainTextContainer">
-            <div class="mainText">I do programming.</div>
-        </div>
+      <ul>
+        <li><a>Killereq_PL</a></li>
+        <li style="float:right"><a href="projects.html">Projects</a></li>
+        <li style="float:right"><a href="games.html">Games</a></li>
+        <li style="float:right"><a class="active" href="index.html">Home</a></li>
+      </ul>
+      <div class="mainTextContainer">
+          <div class="mainText">I do programming.</div>
+      </div>
 
-        <div class="mainButtonContainer">
-          <a href="about.html">About</a>
-        </div>
+      <div class="mainButtonContainer">
+        <a href="games.html">Games</a>
+      </div>
+
+      <div class="mainButtonContainer">
+        <a href="projects.html">Projects</a>
+      </div>
     </body>
 </html>
