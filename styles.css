@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(50, 52, 59); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(50, 52, 59), rgb(17, 17, 20));
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mainText {
+  color: aliceblue;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 500%;
+  text-align: center;
+  border: 3px;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s;
+  background: -webkit-linear-gradient(aliceblue, rgb(220, 228, 235));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainTextContainer {
+  line-height: 5000%;
+  height: 4000%;
+  border: 3px;
+  text-align: center;
+}
+ul {
+  position:fixed;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(220, 228, 235);
+  background-image: linear-gradient(aliceblue, rgb(220, 228, 235));
+}
+li {
+  float: left;
+  border-left: 1px solid rgb(110, 110, 110);
+}
+li a {
+  display: block;
+  color: rgb(15, 15, 15);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li a:hover:not(.active):not(.name) {
+  background-color: #b7b5b5;
+}
+.active {
+  background-color: #cdcdcd;
+}
+.name {
+  border-left: none;
+  padding: 5px 4px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#footer {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+}
