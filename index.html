@@ -14,9 +14,9 @@
   </div>
   <ul>
     <li><a href="https://github.com/Killereq-PL/" class="name"><img src="github.svg" alt="Github" width="36px"></a></li>
-    <li style="float:right"><a onClick="refreshLocation" href="#projects">Projects</a></li>
-    <li style="float:right"><a onClick="refreshLocation" disabled href="#">Games</a></li>
-    <li style="float:right"><a onClick="refreshLocation" class="active" href="#home">Home</a></li>
+    <li style="float:right"><a id="navProjects" href="#projects">Projects</a></li>
+    <li style="float:right"><a id="navGames" href="#games">Games</a></li>
+    <li style="float:right"><a id="navHome" class="active" href="#home">Home</a></li>
   </ul>
   <div class="mainTextContainer">
       <div class="mainText">I do programming.</div>
@@ -29,13 +29,19 @@
     $(window).on('load', function() {
       $("#loader-wrapper").fadeOut(700);
       refreshLocation();
+      $(navProjects).click(refreshLocation);
+      $(navGames).click(refreshLocation);
+      $(navHome).click(refreshLocation);
     });
     function refreshLocation() {
-      if (window.location.hash == "#" || window.location.hash == "#home") {
-        $('#mainTextContainer').fadeIn(100);
-      } else if (window.location.hash == "#projects") {
-        $('#mainTextContainer').fadeOut(100);
-      }
+      console.log(window.location.hash);
+      new Promise(res => setTimeout(res, 100)).then(function () {  
+        if (window.location.hash == "#" || window.location.hash == "#home") {
+          $('#mainTextContainer').fadeIn(100);
+        } else if (window.location.hash == "#projects") {
+          $('#mainTextContainer').fadeOut(100);
+        }
+      });
     }
   </script>
 </body>
